@@ -1,0 +1,88 @@
+Bài 1: OK 40đ
+#include<stdio.h>
+main ()
+{
+	int a;
+	float d;
+	printf("nhap so nguyen a = ");
+	scanf("%d",&a);
+	d=(a/3.0)*(a/3.0)*(a/3.0)*(a/3.0);
+	printf("dap an d = %.3f",d);
+	
+}
+
+Bài 2: OK 30đ
+#include<stdio.h>
+main ()
+{
+	int m,n,x;
+	printf("so bong hoa ");
+	scanf("%d",&n);
+	printf("gia ");
+	scanf("%d",&m);
+	int tongtien=0;
+	if(n%2==1 && n>5)
+	{
+	    tongtien=m*n*0.8;
+		printf("so tien Doan phai tra la %d", tongtien);
+	}
+	else
+	{
+		if (n%2==0 && n>4)
+		{
+			tongtien=m*n*0.85;
+			printf("so tien Doan phai tra la %d", tongtien);
+		}
+		else
+		{
+			tongtien=m*n;
+			printf("so tien Doan phai tra la %d", tongtien);
+		}
+	}
+	
+}
+
+*note: 
++ nên sử dụng if else if dạng này
+    if (/* condition */)
+    {
+        /* code */
+    }
+    else if (/* condition */)
+    {
+        /* code */
+    }
+    else
+    {
+        /* code */
+    }
++ nên để nên in ra màn hình ở dòng cuối hoặc ngoài if nếu nó chung mục đích 
+printf("so tien a Doan phai tra la %d", tongtien); cuối cùng
+
+Bài 3: Xử lí sai rồi 10đ
+#include<stdio.h>
+main ()
+{
+	int m,n,k,t;
+	printf("nhap so ban , tui keo, so keo ");
+	scanf("%d%d%d",&n,&m,&k);
+	t=(m*k)/n;
+	if (t%2==1)
+	printf("yes");
+	else
+	printf("no");
+}
+
+*note code mẫu:
+    int tongKeo = m*k;
+    if ( tongKeo % n != 0 )
+    {
+        printf("no");
+    } else
+    {
+        printf("yes");
+    }
+    // Ket thuc xu li
+
+
+=> KL: TỔng điểm 70đ

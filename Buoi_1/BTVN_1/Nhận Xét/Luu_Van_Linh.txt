@@ -1,0 +1,82 @@
+Điều đầu tiên em cần xem lại là cách đặt tên file(không dấu, không kí tự đặc biệt, nếu muốn cách có thể đạt dấu'_')
+VD: Bai1_Luu_Van_Linh.c
+
+Bài 1: 20đ
+Đề yêu cầu nhập vào số nguyên mà em
+#include<stdio.h>
+int main()
+{
+	float a;	//Sai rồi Nhập vào số Nguyên em nhé
+	printf("nhap so a = ");
+	scanf("%f", &a);
+	 float x = ((a/3)*(a/3)*(a/3)*(a/3));
+	printf("gia tri cua x la: %3.3f",x);
+	return 0;
+}
+
+Bài 2: Sai bước xử lí rồi 10đ
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("so bong hoa n = ");
+	scanf("%d", &n);
+	int m;
+	printf("gia tien moi bong m = ");
+	scanf("%d", &m);
+	m % 100 == 0;
+	if (n % 2 == 0){
+		printf("%d so bong hoa chan\n");
+		float x = (n*m);
+		float y = (x - (0.15*(x)));
+		printf ("so tien doan tra la: %3.2f",y);
+	}else{
+		printf("%d so bong hoa le\n");
+		float x = (n*m);
+		float y = (x - (0.15*(x)));
+		printf("so tien doan phai tra la: %3.2f",y);
+	}
+	return 0;
+}
+
+
+Code của anh: 
+    int tongTien = 0;
+    if (n % 2 == 1 && n > 5)
+    {
+        tongTien = n*m*0.8;
+    } if (n % 2 == 0 && n > 4)
+    {
+        tongTien = n*m*0.85;
+    } else
+    {
+        tongTien = n*m;
+    }
+    // Ket thuc xu li
+
+    printf("Tong tien = %d", tongTien);
+
+Bài 3:Đúng rồi 30đ
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("\nso ban nhan qua n = ");
+	scanf("%d", &n);
+	int m;
+	printf("\nso tui keo m = ");
+	scanf("%d", &m);
+	int k;
+	printf("\nso keo moi tui k = ");
+	scanf("%d", &k);
+	
+	float x = ((m*k) % n);
+    if (x = 0){
+		printf("no\n");
+	}else{
+		printf("yes\n");
+	}
+	return 0;
+}
+
+=>KL: Tổng 60đ

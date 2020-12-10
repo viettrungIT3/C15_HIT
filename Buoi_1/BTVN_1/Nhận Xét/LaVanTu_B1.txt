@@ -1,0 +1,61 @@
+Bài 1 OK đó
+
+#include<stdio.h>
+#include<math.h>
+ main()
+ {
+ 	float a;
+ 	printf("Nhap vao so nguyen a: ");
+ 	scanf("%f", &a);
+    printf("%.3f", pow(a/3, 4));
+}
+ 
+
+Bài 2: OK
+
+#include<stdio.h>
+#include<math.h>
+main ()
+{
+	int n, m;
+	printf("So luong hoa anh Doan muon mua: ");
+	scanf("%d", &n);
+	printf("Gia cua moi bong hoa: ");
+	scanf("%d", &m);
+	
+	if(n % 2 != 0 && n > 5){
+		printf("%.f", m*n-m*n*0.2);
+	}
+	else if(n %2 != 0 && n <= 5){
+		printf("%d", m*n);
+	}
+	if(n % 2 == 0 && n > 4){
+		printf("%.f", m*n-m*n*0.15);
+	}
+	if(n % 2 == 0 && n <= 4){
+		printf("%.f", m*n);
+	}
+	
+	return 0;
+}
+
+Bai 3: OK
+#include<stdio.h>
+#include<math.h>
+main ()
+{
+	int n, m, k;
+	printf("So ban nhan keo :");
+	scanf("%d", &n);
+	printf("So tui keo la: ");
+	scanf("%d", &m);
+	printf("So keo cua moi tui la: ");
+	scanf("%d", &k);
+	if (m*k%n == 0){
+	   printf("no");	
+	} 
+	else  {
+		printf("yes");
+	}
+	return 0;
+}

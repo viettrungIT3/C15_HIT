@@ -1,0 +1,48 @@
+Bài 1 Ok: 40đ
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    int a;
+    float n;
+    printf("nhap vao so nguyen a:");
+    scanf("%d",&a);
+    n=pow((float) a/3,4);
+    printf("%.3f",n);
+    return 0;
+}
+
+Bài 2:Ok 30đ
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,m;
+    printf("nhap n:");
+    scanf("%d",&n);
+    printf("nhap m:");
+    scanf("%d",&m);
+    if(n%2!=0 && n>5) printf("%d",(n*m)/100*80);
+    else if( n%2 == 0 && n>4 ) printf("%d",(n*m)/100*85);
+    else printf("%d",n*m);
+    return 0;
+}
+
+Bài 3: OK 30đ
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,m,k;
+    printf("nhap n: ");scanf("%d",&n);
+    printf("nhap m: ");scanf("%d",&m);
+    printf("nhap k: ");scanf("%d",&k);
+    if( (m*k) % n == 0) printf("no");
+    else printf("yes");
+    return 0;
+}
+
+Tổng 100đ
