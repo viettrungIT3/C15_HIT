@@ -8,6 +8,10 @@ int main() {
     do {
         printf("Nhap n = ");
         scanf("%d", &n);
+        if ( n < 3 ) {
+            printf("Ban da nha sai. Vui long nhap lai.\n");
+        }
+        
     } while ( n < 3 );
     printf("Nhap x = ");
     scanf("%f", &x);

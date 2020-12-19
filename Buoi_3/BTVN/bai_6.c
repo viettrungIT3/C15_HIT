@@ -13,7 +13,8 @@ int main() {
     scanf("%f", &x);
     double T = 1;
     double tu = 1;
-    for (int i = 1; i <= n; i++) {
+    int i;
+    for ( i = 1; i <= n; i++) {
         tu *= (-x);
         T += tu / i;
         // printf("%f   %f\n", tu/i, T);

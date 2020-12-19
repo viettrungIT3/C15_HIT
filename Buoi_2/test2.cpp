@@ -1,29 +1,39 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
-    int n ;
-    float x ;
-    printf("nhap n = ");
-    scanf("%d" , &n );
-    printf("nhap x = ");
-    scanf("%f" , &x);
-    double s;
-    if ( n % 2 == 1) {
-        s = 0;
-    }
-    else {
-        s = 2016*x;
-        float tu = x;
-        float mau = 1;
-        for ( int i = 2; i <= n; i++) {
-            // tu *= x;
-            // mau *= 3;
-            s += pow(x, i)/pow(3, i-1);
+    int m, n;
+    cin>>m>>n;
+    int count = 0;
+    while ( n > 0 &&  m > 0 )
+    {
+    	int count2 = 0;
+        if ( m > n )
+        {
+            count2 = m / n;
+            count += count2;
+            cout<<"Co "<<count2<<" hinh vuong co canh bang "<<n<<endl;
+            m -= count2 * n;
         }
+        else if ( n > m )
+        {
+            count2 = n / m;
+            count += count2;
+            cout<<"Co "<<count2<<" hinh vuong co canh bang "<<m<<endl;
+            n -= count2*m;
+        }
+        else {
+        	count2 = n / m;
+            count += count2;
+            cout<<"Co "<<count2<<" hinh vuong co canh bang "<<m<<endl;
+        	n -= n;
+			m -= m;	
+		}
+//        cout<<"\t"<<m<<" "<<n;
+//        count++;
     }
-    printf("%.3f", s);
+    cout<<"\n"<<count<<endl;
+    
     return 0;
 }

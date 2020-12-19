@@ -9,7 +9,7 @@ int main() {
     } while (n < 1 || n > 1000000);
 
     int count = 0;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 4; i <= n; i++) {
         int value = i;
         int count2 = 1;
         while (value > 0) {
