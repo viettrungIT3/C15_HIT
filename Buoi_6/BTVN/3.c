@@ -35,16 +35,21 @@ void chuyenSo(int a[],int n)
 	   }
     }
 }
-int snt(int a)
+int snt(int n)
 {
-	if (a < 2) return 0;
-	int i;
-	for (i = 2; i <= sqrt(a); i++){
-		if (a % i == 0) {
-			return 0;
-		}
-	}
-	return 1;
+	if (n < 2)
+    {
+        return 0; 
+    }
+    int i, count = sqrt(n);
+    for (i = 2; i <= count; i++)
+    {
+        if (n % i == 0)
+        {
+            return -1;
+        }
+    }
+    return 1;
 }
 void doisnt(int a[], int n)
 {
@@ -68,12 +73,12 @@ void doisnt(int a[], int n)
                 a[i] = temp2;
 		}
 	}
-
+	
 }
 
 int main()
 {
-	int i,n;
+	int i,n;	
 	scanf("%d",&n);
 	while(n<3 || n>50)
 	{
@@ -82,7 +87,7 @@ int main()
 	}
 	int a[n];
 	nhapMang(a,n);
-	chuyenSo(a,n);
+	//chuyenSo(a,n);
 	xuatMang(a,n);
 	printf("\n");
 	doisnt(a,n);

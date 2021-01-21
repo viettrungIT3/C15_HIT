@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\OOP"
+		},
+		{
+			"path": "..\\..\\..\\WEB_HIT_2020"
+		},
+		{
+			"path": "..\\..\\..\\GitHub"
+		},
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\Reactjs_HIT_2020"
+		},
+		{
+			"path": "..\\..\\..\\React_TuHoc"
+		}
+	],
+	"settings": {
+		"code-runner.runInTerminal": true,
+		"code-runner.saveFileBeforeRun": true
+	}
+}
